@@ -21,6 +21,8 @@ public class Logintest extends Baseclass {
 		lo.submitbtn();
 		getpagetitle();
 		Assert.assertEquals(driver.getTitle(), "Sign In to Best Buy");
+		Assert.assertEquals(driver.getTitle(), "Sign In ");
+		
 	}
 
 	@Test(priority = 2)
@@ -33,6 +35,7 @@ public class Logintest extends Baseclass {
 		lo.showpasswrd();
 		lo.submitbtn();
 		getpagetitle();
+		
 
 	}
 
